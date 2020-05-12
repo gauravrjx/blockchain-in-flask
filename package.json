@@ -1,0 +1,17 @@
+{
+  "name": "first_blockchain",
+  "version": "1.0.0",
+  "description": "Simple blockchain demo",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start" : "tailwindcss build Blockchain_client/static/css/main.css -o Blockchain_client/static/css/styles.css",
+    "start:blockchain" : "tailwindcss build Blockchain/static/css/main.css -o Blockchain/static/css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gaurav Jaiswal",
+  "license": "MIT"
+}
