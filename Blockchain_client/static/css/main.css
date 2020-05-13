@@ -2,4 +2,29 @@
 
 @tailwind components;
 
+/* nav-menu */
+.nav-menu{
+    @apply hidden;
+}
+
+@screen lg{
+    .nav-menu{
+        @apply inline-flex flex-row ml-auto
+    }
+}
+
+/* toogle-menu starts */
+@screen md{
+    .toggle-menu{
+        @apply hidden 
+    }
+}
+
+@screen lg{
+    .toggle-menu{
+        @apply hidden 
+    }
+}
+
+
 @tailwind utilities;

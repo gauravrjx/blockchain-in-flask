@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <title>Client home</title>
     <link rel="stylesheet" href="static/css/styles.css">
+
+    <!--    google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat|Poppins&display=swap" rel="stylesheet">
+
+    <!-- font-awesome cdn  -->
+
+    <script src="https://kit.fontawesome.com/de0476f8c8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="bg-blue-100">
-        <p>home page for client</p>
-    </div>
+    <nav class="flex flex-wrap items-center justify-between p-3 px-10 bg-gray-800 content-center">
+        <a href="/" class="text-white text-4xl">Blockchain Client</a>
+        <button class="nav-btn m-3 p-2 text-white inline-block 
+                    hover:text-gray-400 lg:hidden ml-auto">
+            <i class="fas fa-bars"></i>
+        </button> 
+        <div class="w-full lg:inline-flex lg:flex-row lg:w-auto" id="navigation">
+            <div class="nav-menu">
+                <!-- <div class="toggle-menu md:hidden lg:hidden"> -->
+                <a href="#"
+                    class="flex lg:inline-flex lg:w-auto px-3 py-2 text-gray-400 text-xl rounded hover:bg-gray-700 hover:text-white"
+                >
+                    <span>Wallet</span>
+                </a>
+                <a href="#"
+                    class="flex lg:inline-flex lg:w-auto px-3 py-2 text-gray-400 text-xl rounded hover:bg-gray-700 hover:text-white"
+                >
+                    <span>Make Transaction</span>
+                </a>
+                <a href="#"
+                    class="flex lg:inline-flex lg:w-auto px-3 py-2 text-gray-400 text-xl rounded hover:bg-gray-700 hover:text-white"
+                >
+                    <span>View Transaction</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script src="static/js/main.js">
+
+    </script>
 </body>
 </html>
