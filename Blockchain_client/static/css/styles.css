@@ -639,12 +639,6 @@ video {
 
 /* toogle-menu starts */
 
-@media (min-width: 768px){
-  .toggle-menu{
-    display: none
-  }
-}
-
 @media (min-width: 1024px){
   .toggle-menu{
     display: none

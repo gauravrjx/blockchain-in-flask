@@ -14,11 +14,7 @@
 }
 
 /* toogle-menu starts */
-@screen md{
-    .toggle-menu{
-        @apply hidden 
-    }
-}
+
 
 @screen lg{
     .toggle-menu{

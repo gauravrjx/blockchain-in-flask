@@ -6,7 +6,6 @@ const menuIcon = document.querySelector(".nav-btn");
 menuIcon.addEventListener('click', displayMenu);
 
 
-
 // Functions
 
 // to display nav items in small screen
