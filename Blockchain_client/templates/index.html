@@ -40,7 +40,7 @@
         </div>
     </nav>
 
-    <main class="grid grid-cols-4 text-center py-2 leading-relaxed">
+    <main class="lg:grid lg:grid-cols-4 text-center py-2 leading-relaxed">
         <div class="col-span-2 col-start-2">
             <h1 class="text-3xl">Wallet Generator</h1>
             <p class="font-sans">Click the button below to generate public and private keys for your wallet.</p>
@@ -51,18 +51,18 @@
 
         <!-- wallet-keys  -->
 
-        <div class="col-span-2 col-start-2">
+        <div class="lg:col-span-2 lg:col-start-2">
             <!-- textarea-public key  -->
             <div class="my-6">
-                <label for="Public Key" class="block float-left">Public Key:</label> 
-                <textarea name="public-key-textarea" id="" cols="75" rows="5" readonly class="block border bg-gray-100 hover:border-blue-500"></textarea>
+                <label for="Public Key" class="block float-left">Public Key: </label> 
+                <textarea name="public-key-textarea" id="" rows="5" readonly class="block border bg-gray-100 w-full hover:border-blue-500"></textarea>
                 <button class="copy-btn block bg-gray-800 py-1 px-4 text-white hover:bg-blue-700">Copy</button>
             </div>
 
             <!-- textarea-private-key  -->
             <div>
-                <label for="Public Key" class="block float-left">Private Key:</label> 
-                <textarea name="privae-key-textarea" id="" cols="75" rows="5" readonly class="block border bg-gray-100 hover:border-blue-500"></textarea>
+                <label for="Public Key" class="block float-left">Private Key: </label> 
+                <textarea name="privae-key-textarea" id="" rows="5" readonly class="block border bg-gray-100 w-full hover:border-blue-500"></textarea>
                 <button class="copy-btn block bg-gray-800 py-1 px-4 text-white hover:bg-blue-700">Copy</button>        
             </div>
         </div>
