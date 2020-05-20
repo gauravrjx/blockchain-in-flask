@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/de0476f8c8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="flex flex-wrap items-center justify-between p-3 px-10 bg-gray-800 content-center">
+    <nav class="flex flex-wrap items-center justify-between p-3 px-10 bg-blue-700 content-center">
         <a href="/" class="text-white text-4xl">Blockchain Client</a>
         <button class="nav-btn text-white inline-block 
                     hover:text-gray-400 lg:hidden ml-auto">
@@ -39,6 +39,34 @@
             </div>
         </div>
     </nav>
+
+    <main class="grid grid-cols-4 text-center py-2 leading-relaxed">
+        <div class="col-span-2 col-start-2">
+            <h1>Wallet Generator</h1>
+            <p>You can create you Blockchain Wallet by clicking the "Generate Wallet" buton.</p>
+            <button class="bg-blue-700 my-2 py-2 px-3 text-white">
+                Generate Wallet
+            </button>
+        </div>
+
+        <!-- wallet-keys  -->
+
+        <div class="col-span-2 col-start-2">
+            <!-- textarea-public key  -->
+            <div class="my-6">
+                <label for="Public Key" class="block float-left">Public Key:</label> 
+                <textarea name="public-key-textarea" id="" cols="75" rows="5" readonly class="block border bg-gray-100 hover:border-blue-500"></textarea>
+                <button class="copy-btn block bg-blue-700 py-1 px-4 text-white">Copy</button>
+            </div>
+
+            <!-- textarea-private-key  -->
+            <div>
+                <label for="Public Key" class="block float-left">Private Key:</label> 
+                <textarea name="privae-key-textarea" id="" cols="75" rows="5" readonly class="block border bg-gray-100 hover:border-blue-500"></textarea>
+                <button class="copy-btn block bg-blue-700 py-1 px-4 text-white">Copy</button>        
+            </div>
+        </div>
+    </main>
     <script src="static/js/main.js"></script>
 </body>
 </html>

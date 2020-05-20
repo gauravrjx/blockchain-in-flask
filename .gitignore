@@ -254,3 +254,4 @@ fabric.properties
 
 env
 venv
+.vscode\
