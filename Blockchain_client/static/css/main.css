@@ -14,12 +14,19 @@
 }
 
 /* toogle-menu starts */
-
-
 @screen lg{
     .toggle-menu{
         @apply hidden 
     }
+}
+
+/* public-private keyies copy buttons */
+#private-copied-btn{
+    @apply bg-gray-600; 
+}
+
+#public-copied-btn{
+    @apply bg-gray-600; 
 }
 
 
