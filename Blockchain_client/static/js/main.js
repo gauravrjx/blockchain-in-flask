@@ -4,6 +4,7 @@ const menuDiv = document.querySelector(".nav-menu");
 const menuIcon = document.querySelector(".nav-btn");
 const copyBtns = document.getElementsByClassName("copy-btn");
 const textAreaKeis = document.getElementsByClassName("txt-area-key");
+const walletBtn = document.querySelector(".wallet-btn");
 
 
 // Event Listener
@@ -11,6 +12,7 @@ const textAreaKeis = document.getElementsByClassName("txt-area-key");
 menuIcon.addEventListener('click', displayMenu);
 copyBtns[0].addEventListener('click', copyTextToClipboard);
 copyBtns[1].addEventListener('click', copyTextToClipboard);
+walletBtn.addEventListener('click', genKeyAjax);
 
 
 // Functions
@@ -72,4 +74,22 @@ function copyTextToClipboard(event){
             targetId.setAttribute("id", "private-copied-btn")
         }
     }
+}
+
+// to generate key
+function genKeyAjax(event){
+    event.preventDefault();
+
+    const xhr = new XMLHttpRequest();
+    xhr.onload = function(){
+        if(this.status === 200){
+            textAreaKeis[0].innerHTML = "<h2>dfghj</h2>"
+            textAreaKeis[1].innerHTML = "<h2>dfghj</h2>"
+        }else{
+            alert("An error occured");
+        }
+    }
+
+    xhr.open("GET", "/wallet/new", true);
+    xhr.send();
 }

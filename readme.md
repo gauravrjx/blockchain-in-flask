@@ -4,7 +4,7 @@
 3. **if using virtualenv then activate it, otherwise skit this step**
 4. Run `python ./Blackchain/Blockchain.py -p 5001`
 5. Run `python Blockchain.py -p 5002`
-6. Run `python Blockchain_client -p 8001`
+6. Run `python Blockchain_client/Blockchain_client.py -p 8001`
 7. Run `python Blockchain_client -p 8002`
 
 

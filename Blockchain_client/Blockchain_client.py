@@ -25,9 +25,9 @@ def make_transation():
 def view_transaction():
     return render_template('./view_transaction.html')
 
-@app.route('/wallet/')
+@app.route('/wallet/new')
 def wallet():
-    return 'this is wallet page(it has no templaate defined)'
+    return ''
 
 
 
