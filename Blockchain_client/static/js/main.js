@@ -83,8 +83,9 @@ function genKeyAjax(event){
     const xhr = new XMLHttpRequest();
     xhr.onload = function(){
         if(this.status === 200){
-            textAreaKeis[0].innerHTML = this.response["public_key"]
-            textAreaKeis[1].innerHTML = this.response["private_key"]
+            jsonResponse = JSON.parse(this.response)
+            textAreaKeis[0].innerHTML = jsonResponse["public_key"]
+            textAreaKeis[1].innerHTML = jsonResponse["private_key"]
             alert("IMPORTANT\n1. Save both keyies as they are not recoverable\n2. Never Share PRIVATE key with anybody.");
         }else{
             alert("An error occured");
