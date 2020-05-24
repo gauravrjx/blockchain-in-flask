@@ -24,6 +24,10 @@ def index():
 def make_transation():
     return render_template('./make_transaction.html')
 
+@app.route('/generate/transaction')
+def generate_transation():
+    return ''
+
 
 @app.route('/view/transaction')
 def view_transaction():
