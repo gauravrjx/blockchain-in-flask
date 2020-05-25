@@ -11,22 +11,22 @@
             <p class="font-sans px-3">Enter transaction details ans click on "Generate Transaction" button to generate your transaction</p>
         </div>
 
-            <!-- textarea-public key  -->
+            <!-- form for generating transaction -->
         <div class="bg-gray-200 my-6 p-3 lg:col-span-2 lg:col-start-2 ">
-            <form id="form-f-transaction" action="/" method="post">
+            <form id="form-f-transaction"  action="/generate/transaction" method="POST">
                 <label for="sndr-pub-key" class="block float-left">Your Public Key: </label> 
-                <input type="text" name="pub-key-f-tra" required class="txt-area-key block border w-full p-2 hover:border-blue-500"></input>
+                <input type="text" name="pub-key-f-tra" required class="pub-key-f-tra block border w-full p-2 hover:border-blue-500"></input>
                 
                 <label for="sndr-pri-key" class="block float-left">Your Private Key: </label> 
-                <input type="text" name="pri-key-f-tra" rows="2" required class="txt-area-key block border w-full p-2 hover:border-blue-500"></input>
+                <input type="text" name="pri-key-f-tra" rows="2" required class="pri-key-f-tra block border w-full p-2 hover:border-blue-500"></input>
                 
                 <label for="rcvr-pub-key" class="block float-left">Receipent Public Key: </label> 
-                <input type="text" name="rcvr-pub-key-f-trac" rows="2" required class="txt-area-key block border w-full p-2 hover:border-blue-500"></input>
+                <input type="text" name="rcvr-pub-key-f-trac" rows="2" required class="rcvr-pub-key-f-trac block border w-full p-2 hover:border-blue-500"></input>
                 
                 <label for="tran-amt" class="block float-left">Amount: </label> 
-                <input type="text" name="amt-f-trac" rows="1" required class="txt-area-key block border w-full p-2 hover:border-blue-500"></input>
+                <input type="text" name="amt-f-trac" rows="1" required class="amt-f-trac block border w-full p-2 hover:border-blue-500"></input>
                 
-                <button type="submit" value="submit" class="wallet-btn bg-blue-700 my-2 py-2 px-3 text-white hover:bg-gray-800 hover:rounded">
+                <button type="submit" value="submit" class="transaction-btn bg-blue-700 my-2 py-2 px-3 text-white hover:bg-gray-800 hover:rounded">
                     Generate Transaction
                 </button>
             </form>

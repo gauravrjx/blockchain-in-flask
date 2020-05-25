@@ -1,11 +1,18 @@
-// selector
+// selectors
     //index.html -> blockchain_client
 const menuDiv = document.querySelector(".nav-menu");
 const menuIcon = document.querySelector(".nav-btn");
 const copyBtns = document.getElementsByClassName("copy-btn");
 const textAreaKeis = document.getElementsByClassName("txt-area-key");
 const walletBtn = document.querySelector(".wallet-btn");
-
+    //make_transaction.html -> blockchain_client
+const generateForm = document.querySelector("#form-f-transaction");
+const tranPubKey = document.querySelector(".pub-key-f-tra");
+const tranPriKey = document.querySelector(".pri-key-f-tra");
+const rcvrPubKey = document.querySelector(".rcvr-pub-key-f-trac");
+const amtToSend = document.querySelector(".amt-f-trac");
+const tranBtn = document.querySelector(".transaction-btn");
+console.log(34567);
 
 // Event Listener
     //index.html -> blockchain_client
@@ -13,6 +20,10 @@ menuIcon.addEventListener('click', displayMenu);
 copyBtns[0].addEventListener('click', copyTextToClipboard);
 copyBtns[1].addEventListener('click', copyTextToClipboard);
 walletBtn.addEventListener('click', genKeyAjax);
+    //make_transaction.html -> blockchain_client
+generateForm.addEventListener('submit', makeTranAjax);
+// tranBtn.addEventListener('click', makeTranAjax);
+
 
 
 // Functions
@@ -93,5 +104,25 @@ function genKeyAjax(event){
     }
 
     xhr.open("GET", "/wallet/new", true);
+    xhr.send();
+}
+
+// make transaction
+function makeTranAjax(event){
+    event.preventDefault();
+    console.log(event);
+    
+    const xhr = new XMLHttpRequest();
+    xhr.onload = function(){
+        if(this.status === 200){
+            jsonResponse = JSON.parse(this.response);
+            
+        }else{
+            console.error();
+            alert("An error occured");
+        }
+    }
+
+    xhr.open("GET", "/generate/transaction", true);
     xhr.send();
 }
