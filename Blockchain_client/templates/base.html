@@ -7,7 +7,6 @@
    
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat|Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de0476f8c8.js" crossorigin="anonymous"></script>  
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     {% block head %}
     {% endblock %}
 </head>
@@ -43,5 +42,6 @@
     {% block body %}
 
     {% endblock %}
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     </body>
 </html>
