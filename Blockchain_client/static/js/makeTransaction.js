@@ -1,21 +1,13 @@
-console.log(12345678);
-
 window.onload = function(){
     //Selectors
     const tranForm = document.querySelector("#tran-form");
-    // const tranForm = document.getElementsByTagName("form");
     const senderPubKey = document.querySelector(".pub-key-f-tra");
     const senderPriKey = document.querySelector(".pri-key-f-tra");
     const recipientPubKey = document.querySelector(".rcvr-pub-key-f-trac");
     const amtToSend = document.querySelector(".amt-f-trac");
-    // const tranBtn = document.querySelector("tran-form-btn");
 
     // Event Listeners
-    //make_transaction.html -> blockchain_client
     tranForm.addEventListener('submit', tranAjax);
-    // tranBtn.addEventListener('click', tranAjax);
-
-    // Functions
 
 
     // make transaction
