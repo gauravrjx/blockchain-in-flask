@@ -38,10 +38,11 @@ def make_transation():
 
 @app.route('/generate/transaction', methods=["POST"])
 def generate_transation():
-    sender_public_key = request.form["pub-key-f-tra"]
-    sender_private_key = request.form["pri-key-f-tra"]
-    recipient_public_key = request.form["rcvr-pub-key-f-trac"]
-    amount = request.form["amt-f-trac"]
+    content = request.get_json()
+    sender_public_key = content["sender_public_key"] # from makeTransaction.js -> data which is defined just before send()
+    sender_private_key = content["sender_private_key"]
+    recipient_public_key = content["recipient_public_key"]
+    amount = content["amount"]
 
     # instantialing Transaction
     transaction = Transaction(sender_public_key, sender_private_key,
