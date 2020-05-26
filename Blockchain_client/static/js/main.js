@@ -4,14 +4,9 @@ window.onload = function(){
     const menuDiv = document.querySelector(".nav-menu");
     const menuIcon = document.querySelector(".nav-btn");
     
-
     // Event Listeners
     menuIcon.addEventListener('click', displayMenu);
-    
-
-    // Functions
-
-
+ 
     // PART-I to display nav items in small screen
     function displayMenu(event) {
         // console.log(menuDiv.classList[0]);
